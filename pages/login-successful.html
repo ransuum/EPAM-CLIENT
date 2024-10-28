@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items:  center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .success-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #1877f2;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #606770;
+            margin-bottom: 1.5rem;
+        }
+        .button {
+            background-color: #1877f2;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #166fe5;
+        }
+        #countdown {
+            font-weight: bold;
+            color: #1877f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Login Successful!</h1>
+        <p>Welcome back to our social network. We're glad to see you again!</p>
+        <p>You will be redirected to your dashboard in <span id="countdown">5</span> seconds.</p>
+        <a href="/index.html" id="dashboardLink" class="button">Go to Dashboard</a>
+    </div>
+    <script src="/js/login-successful.js"></script>
+</body>
+</html>
